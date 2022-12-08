@@ -115,7 +115,7 @@ int main()
     cin.get();
 
 
-    int control = 1;
+    short int control = 1;
 
     while (edgesFree())
     {
