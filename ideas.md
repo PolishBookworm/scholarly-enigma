@@ -5,3 +5,7 @@
 Then . . . Do it the real way
 https://www.geeksforgeeks.org/conways-game-life-python-implementation/
 or wikipedia article
+
+
+Tweaks:
+* 0 -> ☺ & 1 -> ☻
