@@ -82,10 +82,7 @@ void switch_()
 void forEach()
 {
     int nums[5] = {10, 20, 30, 40, 50};
-    for (auto i : nums)
-    {
-        std::cout << i << std::endl;
-    }
+    for (auto i : nums) std::cout << i << std::endl;
 }
 
 int main()
