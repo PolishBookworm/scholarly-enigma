@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int convert (char num);
 char convert (int num);
@@ -7,9 +8,9 @@ std::string arabicToRoman (int num);
 
 int main (int argc, char const *argv[])
 {
-	std::string str;
-	std::cin >> str;
-	std::cout << romanToArabic(str) << '\n';
+	int num;
+	std::cin >> num;
+	std::cout << arabicToRoman(num) << '\n';
 	return 0;
 }
 
@@ -54,6 +55,25 @@ int romanToArabic (std::string num)
 		int tmpNext = convert(num[i+1]);
 		if (tmp < tmpNext) result -= tmp;
 		else result += tmp;
+	}
+
+	return result;
+}
+
+std::string arabicToRoman (int num)
+{
+	const int arabic[] = {1000,500,100,50,10,5,1};
+	std::string result = "";
+
+	for (int i = 0; i < 7; ++ i)
+	{
+		int tmp = num / arabic[i];
+		if (tmp > 0)
+		{
+			if (tmp <= 3) result += std::string(tmp,convert(arabic[i]));
+			else result = result + convert(arabic[i]) + convert(arabic[i-1]);
+		}
+		num %= arabic[i];
 	}
 
 	return result;
