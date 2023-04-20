@@ -3,8 +3,7 @@
 #include <cmath>
 #include <cstdlib>
 
-int main()
-{
+int main() {
 	int testCases;
 	std::cin >> testCases;
 	std::string dummy;

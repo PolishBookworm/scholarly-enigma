@@ -1,15 +1,13 @@
 #include <iostream>
 
-int main()
-{
+int main() {
 	std::ios_base::sync_with_stdio(0);
 	std::cin.tie(0);
 	std::cout.tie(0);
 
 	long long data[4];
 	for (auto i = 0; i < 4; i ++) std::cin >> data[i];
-	if (data[0] > data[2])
-	{
+	if (data[0] > data[2]) {
 		auto a = data[0];
 		data[0] = data[2];
 		data[2] = a;

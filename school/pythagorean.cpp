@@ -15,8 +15,7 @@ int dicksonFactor(int r, int s);
 // repetitioms
 // 0.008 0.006 0.007 0.008 0.008
 
-int main()
-{
+int main() {
     int limit = 1000;
     // std::cout << pala(limit) << std::endl;
     // std::cout << triangleInequalityMin(limit) << std::endl;
@@ -26,53 +25,41 @@ int main()
     return 0;
 }
 
-int pala(int limit)
-{
+int pala(int limit) {
     int counter = 0;
-    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) for (int k = j; k <= limit; k ++) if (i*i + j*j == k*k)
-    {
+    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) for (int k = j; k <= limit; k ++) if (i*i + j*j == k*k) {
         std::cout << i << ' ' << j << ' ' << k << std::endl;
         counter ++;
     }
 
-
     return counter;
 }
 
-int triangleInequalityMin(int limit)
-{
+int triangleInequalityMin(int limit) {
     int counter = 0;
-    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) for (int k = j; k <= std::min(limit, i + j); k ++) if (i*i + j*j == k*k)
-    {
+    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) for (int k = j; k <= std::min(limit, i + j); k ++) if (i*i + j*j == k*k) {
         std::cout << i << ' ' << j << ' ' << k << std::endl;
         counter ++;
     }
 
-
     return counter;
 }
 
-int triangleInequalityAnd(int limit)
-{
+int triangleInequalityAnd(int limit) {
     int counter = 0;
-    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) for (int k = j; k <= limit && k < i + j; k ++) if (i*i + j*j == k*k)
-    {
+    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) for (int k = j; k <= limit && k < i + j; k ++) if (i*i + j*j == k*k) {
         std::cout << i << ' ' << j << ' ' << k << std::endl;
         counter ++;
     }
 
-
     return counter;
 }
 
-int wSqrt(int limit)
-{
+int wSqrt(int limit) {
     int counter = 0;
-    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++)
-    {
+    for (int i = 1; i <= limit; i ++) for (int j = i; j <= limit; j ++) {
         float k = sqrt(i*i + j*j);
-        if (k <= limit && k == floor(k))
-        {
+        if (k <= limit && k == floor(k)) {
             std::cout << i << ' ' << j << ' ' << k << std::endl;
             counter ++;
         }
@@ -80,25 +67,18 @@ int wSqrt(int limit)
     return counter;
 }
 
-int dickson(int limit)
-{
+int dickson(int limit) {
     int counter = 0;
 
     for (int r = 2; r <= limit; r += 2)
-    {
         for (int s = 1; s < r; s ++)
-        {
             if (dicksonFactor(r, s) == 1) counter ++;
-        }
-    }
 
     return counter;
 }
 
-int dicksonFactor(int r, int s)
-{
-    if (r*r / 2 % s == 0)
-    {
+int dicksonFactor(int r, int s) {
+    if (r*r / 2 % s == 0) {
         int t = r*r / (2*s);
         int a = r + s;
         int b = r + t;

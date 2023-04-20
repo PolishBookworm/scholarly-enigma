@@ -1,7 +1,6 @@
 #include <iostream>
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
 	int n;
 	std::cin >> n;
 	int data[n][2];

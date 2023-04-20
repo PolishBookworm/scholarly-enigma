@@ -2,13 +2,11 @@
 
 std::string action(float v, float s);
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
 	int n;
 	std::cin >> n;
 	float data[n][2];
-	for (auto i = 0; i < n; ++ i)
-	{
+	for (auto i = 0; i < n; ++ i) {
 		std::string tmp;
 		std::cin >> tmp;
 		int pos = tmp.find(':');
@@ -21,8 +19,7 @@ int main(int argc, char const *argv[])
 	return 0;
 }
 
-std::string action(float v, float s)
-{
+std::string action(float v, float s) {
 	if (s/v <= 1) return "SWERVE";
 	if (s/v <= 5) return "BRAKE";
 	return "SAFE";

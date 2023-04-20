@@ -1,8 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-void strings()
-{
+void strings() {
     std::string first = "Frodo";
     std::string last = "Baggins";
     std::string full = first + ' ' + last;
@@ -27,8 +26,7 @@ void strings()
     std::cout << "Hello " << input << std::endl;
 }
 
-void math()
-{
+void math() {
     std::cout << std::max(5, 10) << std::endl;
     std::cout << std::min(5, 10) << std::endl;
 
@@ -41,19 +39,16 @@ void math()
     std::cout << fabs(-2.5) << std::endl; // abs for floats
 }
 
-void ternary()
-{
+void ternary() {
     // The ternary operator
 
     int a = 2, b = 3;
 
 
     // Instead of:
-    // if (a > b)
-    // {
+    // if (a > b) {
     //     cout << "Yup" << endl;
-    // } else
-    // {
+    // } else {
     //     cout << "Nope" << endl;
     // }
     // Write this:
@@ -63,11 +58,9 @@ void ternary()
 
 }
 
-void switch_()
-{
+void switch_() {
     int a = 3;
-    switch (a)
-    {
+    switch (a) {
         case 1:
             std::cout << "Myyy precious" << std::endl;
             break;
@@ -79,14 +72,12 @@ void switch_()
     }
 }
 
-void forEach()
-{
+void forEach() {
     int nums[5] = {10, 20, 30, 40, 50};
     for (auto i : nums) std::cout << i << std::endl;
 }
 
-int main()
-{
+int main() {
     forEach();
 
     return 0;
