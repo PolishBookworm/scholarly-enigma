@@ -10,18 +10,23 @@ int triangleInequalityAnd(int limit);
 int wSqrt(int limit);
 // low accuracy bc of sqrt()
 // 0.011 0.011 0.013 0.012 0.013
+bool dicksonFactor(int r, int s);
 int dickson(int limit);
-int dicksonFactor(int r, int s);
-// repetitioms
+// repetitions
 // 0.008 0.006 0.007 0.008 0.008
+bool dicksonFactorComparison(int r, int s);
+int dicksonComparison(int limit);
+// 0.007 0.007 0.007 0.007 0.007
+// it works!
 
 int main() {
     int limit = 1000;
-    // std::cout << pala(limit) << std::endl;
-    // std::cout << triangleInequalityMin(limit) << std::endl;
-    // std::cout << triangleInequalityAnd(limit) << std::endl;
-    // std::cout << wSqrt(limit) << std::endl;
-    std::cout << dickson(limit) << std::endl;
+    // std::cout << pala(limit) << '\n';
+    // std::cout << triangleInequalityMin(limit) << '\n';
+    // std::cout << triangleInequalityAnd(limit) << '\n';
+    // std::cout << wSqrt(limit) << '\n';
+    // std::cout << dickson(limit) << '\n';
+    std::cout << dicksonComparison(limit) << '\n';
     return 0;
 }
 
@@ -72,20 +77,44 @@ int dickson(int limit) {
 
     for (int r = 2; r <= limit; r += 2)
         for (int s = 1; s < r; s ++)
-            if (dicksonFactor(r, s) == 1) counter ++;
+            if (dicksonFactor(r, s)) counter ++;
 
     return counter;
 }
 
-int dicksonFactor(int r, int s) {
+bool dicksonFactor(int r, int s) {
     if (r*r / 2 % s == 0) {
         int t = r*r / (2*s);
         int a = r + s;
         int b = r + t;
         int c = r + s + t;
-        if (c > 1000) return 2;
+        if (c > 1000) return false;
         std::cout << a << ' ' << b << ' ' <<  c << std::endl;
-        return 1;
+        return true;
     }
-    return 0;
+    return false;
+}
+
+int dicksonComparison(int limit) {
+    int counter = 0;
+
+    for (int r = 2; r <= limit; r += 2)
+        for (int s = 1; s < r; s ++)
+            if (dicksonFactorComparison(r, s)) counter ++;
+
+    return counter;
+}
+
+bool dicksonFactorComparison(int r, int s) {
+    if (r*r / 2 % s == 0) {
+        int t = r*r / (2*s);
+        if (s > t) return false;
+        int a = r + s;
+        int b = r + t;
+        int c = r + s + t;
+        if (c > 1000) return false;
+        std::cout << a << ' ' << b << ' ' <<  c << std::endl;
+        return true;
+    }
+    return false;
 }
