@@ -1,5 +1,4 @@
 # scholarly-enigma
-(Add description)
 
 ## Technologies
 * Python 3.10.7
