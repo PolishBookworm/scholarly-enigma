@@ -16,4 +16,4 @@ Homework, schoolwork. Typically boring.
 Practice problems in preparation for Informatics Olympiad
 
 ### projects
-Mostly self-explanatory. Smaller projects.
+Self-explanatory--smaller projects.
