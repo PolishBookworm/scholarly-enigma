@@ -7,7 +7,7 @@ bool isSuperPrime(int a);
 
 int main(int argc, char const *argv[])
 {
-	std::ifstream in ("nums.txt");
+	std::ifstream in ("liczby.txt");
 	const int N = 5;
 	
 	int numPrimes = 0;
