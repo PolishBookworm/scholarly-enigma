@@ -167,3 +167,7 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+# Kivy project virtual environment
+kivy_venv/
