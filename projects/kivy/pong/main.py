@@ -37,7 +37,7 @@ class PongGame(Widget):
 	def update(self, dt):
 		self.ball.move()
 
-		# bounce of paddles
+		# bounce off paddles
 		self.player1.bounce_ball(self.ball)
 		self.player2.bounce_ball(self.ball)
 
