@@ -5,7 +5,8 @@ with open("in.txt") as f:
 
 for i in range(len(data)):
 	tmp = data[i][::-1]
-	x = tmp.find("/")
+	x = tmp.find("-")
+	# x = tmp.find("/")
 	try:
 		tmp = tmp[0:x] + "|" + tmp[x+1:]
 	except IndexError:
