@@ -171,3 +171,4 @@ cython_debug/
 
 # Kivy project virtual environment
 kivy_venv/
+cache/
