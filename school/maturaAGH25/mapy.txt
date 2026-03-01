@@ -1,0 +1,31 @@
+ID;Autor;Tytul;Trudnosc;BPM;Max_Punkty
+1;Cysmix i Emilka;Deszcz;7;128;1500
+2;Solejek;Renatka;7;182;1500
+3;Kuba Omsiak;Moja Love;5;128;1000
+4;Poscigacze;Zgubilem sie;6;170;1200
+5;Rostek;Woda Edition (remix Pawelka Rozyka);5;133;1000
+6;Ramzes B.;FlakiPycha;6;130;1200
+7;Rajec;Latarenka;4;120;900
+8;Tofik Lis;MEGALOSZALENIEC;7;240;1500
+9;Panda Oczy i Termit;Duzy Wynik;6;150;1200
+10;Portek i Madeonek;Schronisko;5;128;1000
+11;Tofik Lis;Nadzieje i Marzenia;6;120;1200
+12;Goryle;Czuj sie dobrze S.A.;5;139;1000
+13;Krolowa;Nie Zatrzymuj Mnie Teraz;5;156;1000
+14;Reolka;Bez Tytulu;6;190;1200
+15;Pan Daft;Twardziej, Lepiej, Szybciej, Mocniej;5;123;1000
+16;Umarle Korporacje;Wszystko zamarznie;8;240;1800
+17;Tofik Lis;Kosc-Trabek;6;160;1200
+18;Avicius;Obudz Mnie Prosze;5;124;1000
+19;Dzwiekowy Szok Magii;Pekniete Tluczki;7;170;1400
+20;xi;NURKOWANIE WOLNOSCI;9;222;2000
+21;Lisek Przemyka;Wielka Czarna;9;300;2000
+22;Alanek Spacerowicz;Zgasla;4;90;900
+23;Pan Daft i Franus;Bierz Szczescie;5;116;1000
+24;Dziewczyna Getterka;Ulica Rockefellera (Turbo Mix);6;130;1200
+25;Przeplyw;JAZDA!!!;6;150;1200
+26;Asa z Bazy;Wszystko czego Ona Chciala;4;94;900
+27;Gotowka Gotowka;Nadgodzinki;5;128;1000
+28;S3RLek;Basior dla Sercunia;6;175;1200
+29;Mis z Sowiej Chaty;Swietliki;4;90;900
+30;Hanka;Airman? Nie Tym Razem;7;180;1400

@@ -1,0 +1,18 @@
+3.1.
+S: D
+A: B
+T: G
+B: E
+
+3.2.
+T: 197
+S: 204
+D: 226
+
+3.3.
+plagalne: 66
+doskonałe: 73
+wielkie doskonałe: 2
+
+3.4.
+Sopran: 6
